@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#d81e06",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "迪信通",
+  "backgroundColor": "#eeeeee",
+  "enablePullDownRefresh":"true",
+  "onReachBottomDistance":"50",
+  "backgroundTextStyle": "light"
+}

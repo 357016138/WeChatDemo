@@ -1,0 +1,38 @@
+<!--index.wxml-->
+
+  <view class='top_logo'>
+     <image class='top_logo_image' src="/images/dixintong_logo.png"></image>
+     <!-- <text class='top_logo_text'>迪信通</text> -->
+  </view>
+
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>  
+ <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+      <view wx:if="{{hasRefesh}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center;">
+      <icon type="waiting" size="45"/><text>刷新中...</text></view>
+      <view wx:else  style="display:none" ><text></text></view>
+      <view class="lll"  wx:for="{{list}}" wx:for-item="item" bindtap="bindViewTap" >
+        <view class="list1" >
+            <image style=" width: 100px;height: 100px;margin: 20rpx;" src="{{item.Pro_SImg}}"></image>
+            <view  class="eee" > 
+            <view style="margin:5px;font-size:8px"> 价格:{{item.CurrentPrice}}</view>
+            <view style="margin:5px;color:red;font-size:6px"> 名称{{item.ProName}}</view>
+            </view>
+         </view>
+
+         <view class="list2">
+            <image style=" width: 100px;height: 100px;margin: 20rpx;" src="{{item.Pro_SImg}}"></image>
+            <view  class="eee" > 
+            <view style="margin:5px;font-size:8px"> 价格:{{item.CurrentPrice}}</view>
+            <view style="margin:5px;color:red;font-size:6px"> 名称{{item.ProName}}</view>
+            </view>
+         </view>
+      </view>
+<view class="tips1">
+      <view wx:if="{{hasMore}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center;">
+      <icon type="waiting" size="20" color='red'/><text>加载中...</text></view>
+      <view wx:else><text>没有更多内容了</text></view>
+</view>
+ </scroll-view>
+

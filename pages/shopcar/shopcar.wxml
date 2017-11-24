@@ -1,0 +1,11 @@
+<!--shopcar.wxml-->
+<view class="container">
+  
+
+<image  class="empty_shopcar" src="/images/empty_shopcar.png"></image>
+
+<text class="empty_shopcar_text">去添加点东西吧</text>
+
+
+
+</view>

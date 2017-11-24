@@ -1,0 +1,16 @@
+
+
+.empty_shopcar {
+   width: 150rpx;
+   height: 150rpx;
+   margin-top: 45%;
+  
+   border-radius: 50%;
+}
+
+.empty_shopcar_text {
+  color: #8a8a8a;
+  font-size: 23rpx;
+  letter-spacing: 5rpx;
+  margin-top: 15rpx;
+}
